@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:47 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 13:31:21 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 13:33:00 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 char	*ft_f2(char *r, int number, t_flags **flags)
 {
-	r = ft_strjoin_free(r, "", 1);
 	if ((*flags)->point == 1 && (*flags)->plus == 0
 		&& number >= 0 && (*flags)->width > 0)
 		(*flags)->width = (*flags)->width - 1;
@@ -67,7 +66,7 @@ int		ft_print_int(va_list args, int writed, t_flags **flags)
 	char	*t;
 
 	number = va_arg(args, int);
-	r = ft_itoa(number);
+	r = ft_strjoin_free(ft_itoa(number), "", 1);
 	/*r = ft_f1(r, number, *flags);
 	if ((*flags)->has_precission == 1 && (*flags)->precission == 0
 		&& (*flags)->width == 0)
