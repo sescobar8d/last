@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:47 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 11:20:25 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 11:33:11 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,13 @@ char	*ft_f2(char *r, int number, t_flags **flags)
 		r = ft_spacerz((char *)r, (*flags)->precission, *flags);
 		r = ft_spaces((char *)r, *flags);
 		if ((*flags)->plus == 0)
-			(*flags)->has_precission = 0;
+			(*flags)->has_preciseeon = 0;
 		(*flags)->has_width = 0;
 	}
 	if ((*flags)->plus == 1 && (number >= 0) &&
 		(*flags)->has_precission == 0 && (*flags)->zero == 0
 		&& (*flags)->minus == 0)
-		r = ft_strjoin_free("+", r, 2);
+		r = ft_strjoin("+", r);
 	if ((*flags)->zero == 1 && (*flags)->minus == 0)
 		r = ft_spacerz((char *)r, (*flags)->width, *flags);
 	if ((*flags)->has_precission == 1 && (*flags)->plus == 1
