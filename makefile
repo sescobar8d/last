@@ -6,7 +6,7 @@
 #    By: sescobar <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/21 10:16:56 by sescobar          #+#    #+#              #
-#    Updated: 2020/10/12 11:48:56 by sescobar         ###   ########.fr        #
+#    Updated: 2020/10/12 11:49:44 by sescobar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ SOURCES = ft_printf.c\
 	  ft_check_flags.c\
 	  ft_precision.c\
 	  ft_spacer.c\
+	  ft_spaces.c\
 
 OBJFOLDER = srcs/lib/
 
