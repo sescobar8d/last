@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:47 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 12:35:15 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 12:39:12 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,14 +73,14 @@ int		ft_print_int(va_list args, int writed, t_flags **flags)
 		ft_putstr_fd("", 1);
 		return (writed);
 	}
-	r = ft_h1(r, *flags);
+	/*r = ft_h1(r, *flags);
 	if ((*flags)->has_precission == 1)
 		r = ft_spacerz((char *)r, (*flags)->precission, *flags);
 	if ((*flags)->point == 1 && number >= 0 && (*flags)->plus == 0)
 		ft_putstr_fd(" ", 1);
 	if ((*flags)->hash == 1)
 		writed = writed + 1;
-	ft_putstr_fd(r, 1);
+	*/ft_putstr_fd(r, 1);
 	writed += ft_strlen(r);
 	return (writed);
 }
