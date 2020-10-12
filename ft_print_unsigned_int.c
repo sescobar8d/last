@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:26 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 19:28:38 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 19:29:21 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ char	*ft_p1(char *r, t_flags *flags)
 
 	g = ft_strjoin_free(g, r, 2);
 	r = ft_p2(g, &flags);
+	free(g);
 	return (r);
 }
 
