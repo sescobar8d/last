@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 11:59:51 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 12:00:15 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,7 @@ int		ft_print_str(va_list args, int writed, t_flags **flags)
 	char	*string;
 
 	rec = va_arg(args, char *);
-	string = ft_calloc(1, (size_t)(*flags)->width);
+	string = ft_calloc(1, (size_t)50);
 	string = rec;
 	if (string == NULL)
 	{
