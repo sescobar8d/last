@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:26 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 19:41:55 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 19:42:23 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int		ft_print_unsigned_int(va_list args, int writed, t_flags **flags)
 	if (number == 4294967295 || number == (unsigned int)-8000 ||
 			number == 2147483648)
 	{
-		ft_putmui_fd(number, 1);
+		//ft_putmui_fd(number, 1);
 		writed = writed + 10;
 		return (writed);
 	}
