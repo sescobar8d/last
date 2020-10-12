@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:26 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 13:54:52 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 15:44:12 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ int		ft_print_unsigned_int(va_list args, int writed, t_flags **flags)
 		writed = writed + 10;
 		return (writed);
 	}
-	r = ft_p1((ft_itoa(number)), *flags);
+//	r = ft_p1((ft_itoa(number)), *flags);
 	r = ft_l1(r, *flags);
 	if ((*flags)->precission == 0 && (*flags)->has_precission == 1)
 	{
