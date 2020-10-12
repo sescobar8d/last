@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:47 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 13:28:26 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 13:31:21 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 char	*ft_f2(char *r, int number, t_flags **flags)
 {
+	r = ft_strjoin_free(r, "", 1);
 	if ((*flags)->point == 1 && (*flags)->plus == 0
 		&& number >= 0 && (*flags)->width > 0)
 		(*flags)->width = (*flags)->width - 1;
