@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 14:04:26 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 14:09:37 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,15 @@ int		ft_sp(int c, t_flags **flags)
 		return (c);
 }
 
+int		ft_yui(int c, t_flags **flags)
+{
+	ft_putstr_fd("-", 1);
+	(*flags)->hash = 1;
+	if ((*flags)->zero == 1)
+		c == 1;
+	return (c);
+}
+
 char	*ft_spacerz(char *str, int n, t_flags *flags)
 {
 	char	*result;
@@ -70,10 +79,11 @@ char	*ft_spacerz(char *str, int n, t_flags *flags)
 			result = ft_strjoin_free((ft_strjoin_free("-", result, 2)), str, 3);
 			return (result);
 		}
-		ft_putstr_fd("-", 1);
+		c = ft_yui(c, &flags);
+		/*ft_putstr_fd("-", 1);
 		flags->hash = 1;
 		if ((flags)->zero == 1)
-			c = 1;
+			c = 1;*/
 	}
 	if (ft_strlen(str) > (unsigned int)n)
 	{
@@ -85,16 +95,3 @@ char	*ft_spacerz(char *str, int n, t_flags *flags)
 	return (result);
 }
 
-char	*ft_str_up(char *str)
-{
-	int	c;
-
-	c = 0;
-	while (*str != '\0')
-	{
-		*str = ft_toupper(*str);
-		c++;
-		str++;
-	}
-	return (str - c);
-}
