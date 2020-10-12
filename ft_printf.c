@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 11:27:11 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 10:48:21 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 10:56:29 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ int			ft_print_type(char *str, va_list args,
 {
 	if (*str == 's')
 		writed = ft_print_str(args, writed, &flags);
-	/*else if (*str == 'i' || *str == 'd')
+	else if (*str == 'i' || *str == 'd')
 		writed = ft_print_int(args, writed, &flags);
-	*/else if (*str == 'c')
+	else if (*str == 'c')
 		writed = ft_print_char(args, writed, &flags);
 	else if (*str == '%')
 		writed = ft_print_simbol(str, writed, &flags);
