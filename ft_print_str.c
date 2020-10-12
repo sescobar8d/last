@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 13:42:57 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 13:43:34 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,15 +60,15 @@ int		ft_print_str(va_list args, int writed, t_flags **flags)
 		/*if ((*flags)->has_precission == 1 && (*flags)->precission > 0)
 			string = ft_precision((char *)string, *flags);
 		string = ft_spaces(string, *flags);
-	*/}
+	*/}/*
 	else if ((*flags)->has_width == 1 && (*flags)->has_precission == 1)
 	{
 		string = ft_precision((char *)string, *flags);
 		string = ft_spaces((char *)string, *flags);
 		ft_delete(*flags);
 	}
-	//string = ld(string, *flags);
-	ft_putstr_fd(string, 1);
+	string = ld(string, *flags);
+*/	ft_putstr_fd(string, 1);
 	writed += ft_strlen(string);
 	return (writed);
 }
