@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 14:02:30 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 14:04:26 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,10 +50,7 @@ int		ft_sp(int c, t_flags **flags)
 		return (c);
 	}
 	else
-	{
-		c = 0;
 		return (c);
-	}
 }
 
 char	*ft_spacerz(char *str, int n, t_flags *flags)
@@ -61,7 +58,7 @@ char	*ft_spacerz(char *str, int n, t_flags *flags)
 	char	*result;
 	int		c;
 
-	//c = 0;
+	c = 0;
 	result = ft_calloc(1, (size_t)n);
 	c = ft_sp(c, &flags);
 	if (*str == '-')
@@ -79,7 +76,10 @@ char	*ft_spacerz(char *str, int n, t_flags *flags)
 			c = 1;
 	}
 	if (ft_strlen(str) > (unsigned int)n)
+	{
+		free(result);
 		return (str);
+	}
 	ft_spacerc(result, ((n - c) - ft_strlen(str)));
 	result = ft_strjoin_free(result, str, 3);
 	return (result);
