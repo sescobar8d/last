@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:26 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 19:34:49 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 19:35:44 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ int		ft_print_unsigned_int(va_list args, int writed, t_flags **flags)
 	{
 		ft_putmui_fd(number, 1);
 		writed = writed + 10;
+		free(r);
 		return (writed);
 	}
 	r = ft_p1((ft_itoa(number)), *flags);
