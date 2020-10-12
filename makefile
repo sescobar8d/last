@@ -6,7 +6,7 @@
 #    By: sescobar <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/21 10:16:56 by sescobar          #+#    #+#              #
-#    Updated: 2020/10/12 09:51:19 by sescobar         ###   ########.fr        #
+#    Updated: 2020/10/12 10:15:14 by sescobar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ LNAME = libftprintf.a
 SOURCES = ft_printf.c\
 	  ft_print_char.c\
 	  ft_check_flags.c\
+	  ft_spacer.c\
 
 OBJFOLDER = srcs/lib/
 
