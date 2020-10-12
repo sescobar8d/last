@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 13:58:16 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 14:01:08 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ char	*ft_spacerz(char *str, int n, t_flags *flags)
 	char	*result;
 	int		c;
 
-	c = 0;
+	//c = 0;
 	result = ft_calloc(1, (size_t)n);
 	c = ft_sp(c, &flags);
 	if (*str == '-')
