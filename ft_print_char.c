@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:27 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/09 12:38:59 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 11:46:04 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int		ft_print_char(va_list args, int writed, t_flags **flags)
 	}
 	else
 		writed = fpr(ch, writed);
+	free(r);
 	return (writed);
 }
 
