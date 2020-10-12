@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:27 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 11:46:04 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 11:47:06 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int		ft_print_char(va_list args, int writed, t_flags **flags)
 	if ((*flags)->minus == 1)
 	{
 		writed = ft_minus(ch, r, writed, *flags);
+		free(r);
 		return (writed);
 	}
 	if ((*flags)->has_width == 1)
