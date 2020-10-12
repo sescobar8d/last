@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:00 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 14:06:27 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 14:17:13 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,11 @@ char	*ft_precision(char *string, t_flags *flags)
 	result = ft_calloc(1, (flags)->precission);
 	ft_strlcat(result, string, (flags)->precission + 1);
 	return (result);
+}
+
+void	ft_putmui_fd(unsigned int n, int fd)
+{
+	if (n >= 10)
+		ft_putmui_fd(n / 10, fd);
+	ft_putchar_fd((char)(n % 10 + 48), fd);
 }
