@@ -6,7 +6,7 @@
 #    By: sescobar <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/21 10:16:56 by sescobar          #+#    #+#              #
-#    Updated: 2020/10/12 13:51:30 by sescobar         ###   ########.fr        #
+#    Updated: 2020/10/12 13:53:50 by sescobar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ SOURCES = ft_printf.c\
 	  ft_print_str.c\
 	  ft_print_simbol.c\
 	  ft_print_int.c\
+	  ft_print_unsigned_int.c\
 	  ft_check_flags.c\
 	  ft_precision.c\
 	  ft_spacer.c\
