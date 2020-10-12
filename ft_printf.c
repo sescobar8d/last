@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 11:27:11 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 11:41:48 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 11:49:11 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ static void	initialize_struct(t_flags *flags)
 int			ft_print_type(char *str, va_list args,
 		int writed, t_flags *flags)
 {
-	/*if (*str == 's')
+	if (*str == 's')
 		writed = ft_print_str(args, writed, &flags);
-	else if (*str == 'i' || *str == 'd')
+	/*else if (*str == 'i' || *str == 'd')
 		writed = ft_print_int(args, writed, &flags);
-	else */if (*str == 'c')
+	*/else if (*str == 'c')
 		writed = ft_print_char(args, writed, &flags);
 	str = NULL;
 		/*else if (*str == '%')
