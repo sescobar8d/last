@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 14:09:37 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 14:10:17 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,7 @@ int		ft_yui(int c, t_flags **flags)
 	ft_putstr_fd("-", 1);
 	(*flags)->hash = 1;
 	if ((*flags)->zero == 1)
-		c == 1;
+		c = 1;
 	return (c);
 }
 
