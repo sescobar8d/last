@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 13:39:58 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 13:57:14 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ char	*ft_spacerz(char *str, int n, t_flags *flags)
 	if (ft_strlen(str) > (unsigned int)n)
 		return (str);
 	ft_spacerc(result, ((n - c) - ft_strlen(str)));
-	result = ft_strjoin_free(result, str, 1);
+	result = ft_strjoin_free(result, str, 3);
 	return (result);
 }
 
