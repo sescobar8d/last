@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:47 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 12:46:44 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/12 12:55:00 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,7 @@ int		ft_print_int(va_list args, int writed, t_flags **flags)
 {
 	int		number;
 	char	*r;
+	char	*temp;
 
 	number = va_arg(args, int);
 	r = ft_itoa(number);
@@ -82,5 +83,6 @@ int		ft_print_int(va_list args, int writed, t_flags **flags)
 		writed = writed + 1;
 	ft_putstr_fd(r, 1);
 	writed += ft_strlen(r);
-	*/return (writed);
+	*/free(r);
+	return (writed);
 }
