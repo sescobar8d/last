@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 14:27:10 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 14:27:45 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@ char		*precission_p(unsigned long n, char *hex, t_flags **flags)
 		ft_memset(esp, '0', (*flags)->precission - ft_strlen(hex));
 		hex = ft_strjoin_free(esp, hex, 3);
 	}
-	if (n || n == 0)
-		hex = ft_strjoin_free("0x", hex, 2);
+	hex = ft_strjoin_free("0x", hex, 2);
 	return (hex);
 }
 
@@ -51,7 +50,7 @@ char    *checkz(char *hex, t_flags *flags)
         if (flags->has_precission == 1 && flags->precission == 0)
                 hex = ft_strjoin_free("", "", 0);
         if ((flags)->has_precission == 1)
-                hex = precission_p(n, hex, &flags);
+                hex = precission_p(hex, &flags);
         hex = width_p(hex, &flags);
         return (hex);
 }
@@ -78,7 +77,7 @@ int			ft_print_pointer(va_list args,
 			hex = ft_strjoin_free("0", hex, 2);
 		if ((*flags)->hash == 1 && n != 0)
 			hex = ft_strjoin_free("0x", hex, 2);
-		hex = precission_p(n, hex, flags);
+		hex = precission_p(hex, flags);
 		hex = width_p(hex, flags);
 	}
 	ft_putstr_fd(hex, 1);
