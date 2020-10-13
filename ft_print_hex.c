@@ -6,28 +6,11 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/09 14:08:39 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 13:22:30 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-/*
-char		*ft_strjoin_freex(char *str1, char *str2, int i)
-{
-	char	*temp;
-
-	temp = ft_strjoin(str1, str2);
-	if (i == 1)
-		free(str1);
-	else if (i == 2)
-		free(str2);
-	if (i == 3)
-	{
-		free(str1);
-		free(str2);
-	}
-	return (temp);
-}*/
 
 char		*precission_hex(char *hex, t_flags **flags)
 {

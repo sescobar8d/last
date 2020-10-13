@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:56 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 13:20:47 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 13:26:27 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,11 @@ char	*ft_width_pointer(char *hex, t_flags **flags)
 	if ((*flags)->width > ft_strlen(hex))
 	{
 		esp = ft_calloc(1, (size_t)((*flags)->width - ft_strlen(hex) + 1));
-		ft_memset(esp, ((*flags)->zero == 1 ? '0' : ' '),
-			(*flags)->width - ft_strlen(hex));
+		//ft_memset(esp, ((*flags)->zero == 1 ? '0' : ' '),
+		//	(*flags)->width - ft_strlen(hex));
+		ft_memset(esp, ' ', (*flags)->width - ft_strlen(hex));
+		if ((*flags)->zero == 1 && (*flags)->has_precission == 0)
+			ft_memset(esp, '0', (*flags)->width - ft_strlen(hex));
 		if ((*flags)->minus == 0)
 			hex = ft_strjoin_free(esp, hex, 3);
 		else
