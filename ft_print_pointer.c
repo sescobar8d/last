@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 13:52:27 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 13:55:20 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,8 @@ int			ft_print_pointer(const char *str, va_list args,
 	char			*hex;
 
 	n = va_arg(args, unsigned long);
+	if (!p)
+		hex = ft_strjoin_free(hex, "0x0", 1);
 	if ((((*flags)->has_precission == 1 && (*flags)->precission == 0) ||
 		((*flags)->has_width == 1 && (*flags)->width == 0)) && (n == 0))
 		hex = ft_strjoin_free("", "", 0);
@@ -63,8 +65,6 @@ int			ft_print_pointer(const char *str, va_list args,
 	if ((*flags)->hash == 1 && n != 0)
 		hex = ft_strjoin_free("0x", hex, 2);
 	hex = width_p(hex, flags);
-	if (*str == 'X')
-		hex = ft_str_up(hex);
 	ft_putstr_fd(hex, 1);
 	writed = writed + ft_strlen(hex);
 	free(hex);
