@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 14:53:20 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 14:54:48 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ char	*lds(unsigned long n, char *hex, t_flags *flags)
 {
 	if (!n)
 	{
-		hex = ft_calloc(1, sizeof(char));
+		//hex = ft_calloc(1, sizeof(char));
 		hex = checkz(hex, &flags);
 	}
 	return (hex);
@@ -74,6 +74,7 @@ int			ft_print_pointer(va_list args,
 	char			*hex;
 
 	n = va_arg(args, unsigned long);
+	hex = ft_calloc(1, sizeof(char));
 	hex = lds(n, hex, *flags);
 	/*if (!n)
 	{
@@ -82,6 +83,7 @@ int			ft_print_pointer(va_list args,
 	}*/
 	if (n)
 	{
+		free(hex);
 		if ((((*flags)->has_precission == 1 && (*flags)->precission == 0) ||
 		((*flags)->has_width == 1 && (*flags)->width == 0)) && (n == 0))
 			hex = ft_strjoin_free("", "", 0);
