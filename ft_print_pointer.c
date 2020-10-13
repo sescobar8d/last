@@ -6,13 +6,13 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 14:27:45 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 14:28:15 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-char		*precission_p(unsigned long n, char *hex, t_flags **flags)
+char		*precission_p(char *hex, t_flags **flags)
 {
 	char	*esp;
 
