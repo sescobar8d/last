@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 13:57:02 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 13:58:36 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,8 +52,8 @@ int			ft_print_pointer(va_list args,
 
 	n = va_arg(args, unsigned long);
 	hex = NULL;
-	if (!n)
-		hex = ft_strjoin_free(hex, "0x0", 1);
+	//if (!n)
+	hex = ft_strjoin_free(hex, "0x0", 1);
 	if ((((*flags)->has_precission == 1 && (*flags)->precission == 0) ||
 		((*flags)->has_width == 1 && (*flags)->width == 0)) && (n == 0))
 		hex = ft_strjoin_free("", "", 0);
