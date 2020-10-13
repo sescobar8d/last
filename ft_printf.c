@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 11:27:11 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/12 13:54:00 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 13:13:30 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,13 @@ int			ft_print_type(char *str, va_list args,
 		writed = ft_print_char(args, writed, &flags);
 	else if (*str == '%')
 		writed = ft_print_simbol(str, writed, &flags);
-	else if (*str == 'u')
+/*	else if (*str == 'u')
 		writed = ft_print_unsigned_int(args, writed, &flags);
-	/*else if (*str == 'p')
+	else if (*str == 'p')
 		writed = ft_print_pointer(args, writed, &flags);
-	else if (*str == 'x' || *str == 'X')
+	*/else if (*str == 'x' || *str == 'X')
 		writed = ft_print_hex(str, args, writed, &flags);
-	*/return (writed);
+	return (writed);
 }
 
 int			ft_is_flag(char *str)

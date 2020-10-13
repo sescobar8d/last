@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/21 12:06:11 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 13:04:05 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 13:12:04 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,11 @@
 static char	*ft_strnew(int i)
 {
 	char	*str;
-	char	*temp;
 
 	if (!(str = malloc(i * sizeof(char))))
 		return (0);
 	else
-	{
-		temp = ft_strjoin(str, "");
-		free(str);
-		return (temp);
-	}
+		return (str);
 }
 
 static	int	ft_intlen(unsigned int n)
