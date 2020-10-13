@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 11:27:11 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 13:47:21 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 13:57:08 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int			ft_print_type(char *str, va_list args,
 /*	else if (*str == 'u')
 		writed = ft_print_unsigned_int(args, writed, &flags);
 	*/else if (*str == 'p')
-		writed = ft_print_pointer(str, args, writed, &flags);
+		writed = ft_print_pointer(args, writed, &flags);
 	else if (*str == 'x' || *str == 'X')
 		writed = ft_print_hex(str, args, writed, &flags);
 	return (writed);

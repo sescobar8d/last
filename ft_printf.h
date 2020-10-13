@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 12:18:17 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 13:46:52 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 13:57:17 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char	*ft_spacerz(char *str, int n, t_flags *flags);
 int	ft_print_int(va_list args, int writed, t_flags **flags);
 int 	ft_print_unsigned_int(va_list args, int writed, t_flags **flags);
 int	ft_print_char(va_list args, int writed, t_flags **flags);
-int	ft_print_pointer(const char *str, va_list args, int writed, t_flags **flags);
+int	ft_print_pointer(va_list args, int writed, t_flags **flags);
 int	ft_print_simbol(const char *str, int writed, t_flags **flags);
 int	ft_print_hex(const char *str, va_list args, int writed, t_flags **flags);
 int	ft_minus(char c, char *str, int writed, t_flags *flags);
