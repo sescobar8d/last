@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:50:39 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 14:24:54 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/13 14:25:48 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,8 @@ char    *checkz(char *hex, t_flags *flags)
         if (flags->has_precission == 1 && flags->precission == 0)
                 hex = ft_strjoin_free("", "", 0);
         if ((flags)->has_precission == 1)
-                hex = ft_precission_pointer(hex, &flags);
-        hex = ft_width_pointer(hex, &flags);
+                hex = ft_precission_p(hex, &flags);
+        hex = ft_width_p(hex, &flags);
         return (hex);
 }
 
