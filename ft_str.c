@@ -32,7 +32,7 @@ char    *lep_str(t_flags **flags, char *spaces, char *string)
                 else
                         ft_r1_str(spaces);
         }
-	spaces = ft_strjoin_free(spaces, j, 3);
+	//spaces = ft_strjoin_free(spaces, j, 3);
         return (spaces);
 }
 
