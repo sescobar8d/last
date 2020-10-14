@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/14 13:33:16 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/14 13:34:02 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ int		ft_print_str(va_list args, int writed, t_flags **flags)
 	string = va_arg(args, char *);
 	if (string == NULL)
 	{
-		string = "(null)";
+		string = "(null)\0";
 		if ((*flags)->has_precission == 1 && (*flags)->precission > 0)
 			string = ft_precision_str((char *)string, *flags);
 		string = ft_spaces_str(string, *flags);
