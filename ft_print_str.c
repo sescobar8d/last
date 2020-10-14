@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/14 11:04:14 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/14 11:05:09 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ char	*ld2(char *string, t_flags **flags)
 		string = ft_spaces((char *)string, *flags);
 	else if ((*flags)->has_precission == 1)
 		string = ft_precision((char *)string, *flags);
-	/*else if ((*flags)->zero == 1 && (*flags)->minus == 0)
+	else if ((*flags)->zero == 1 && (*flags)->minus == 0)
 		string = ft_spacerz(string, (*flags)->width, *flags);
-	*/else if ((*flags)->zero == 1 && (*flags)->minus == 1)
+	else if ((*flags)->zero == 1 && (*flags)->minus == 1)
 		string = ft_spaces(string, *flags);
 	return (string);
 }
