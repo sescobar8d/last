@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/14 11:21:23 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/14 11:21:57 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_delete(t_flags *flags)
 	flags->has_width = 0;
 	flags->has_precission = 0;
 }
-
+/*
 char	*ld2(char *string, t_flags **flags)
 {
 	if ((*flags)->has_width == 1 && (*flags)->zero == 0)
@@ -48,7 +48,7 @@ char	*ld(char *string, t_flags *flags)
 	string = ld2(string, &flags);
 	return (string);
 }
-
+*/
 int		ft_print_str(va_list args, int writed, t_flags **flags)
 {
 	char	*string;
