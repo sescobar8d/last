@@ -51,6 +51,6 @@ char    *ft_spaces_str(char *string, t_flags *flags)
                 free(spaces);
                 return (string);
         }
-        spaces = ft_strjoin_free(spaces, string, 3);
+        spaces = ft_strjoin_free(spaces, string, 2);
         return (spaces);
 }
