@@ -71,7 +71,7 @@ char    *ft_spacerz_str(char *str, int n, t_flags *flags)
         }
         if (ft_strlen(str) > (unsigned int)n)
         {
-                //free(result);
+                free(result);
                 return (str);
         }
         ft_spacerc_str(result, ((n - c) - ft_strlen(str)));
