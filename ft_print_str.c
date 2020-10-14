@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/14 11:25:19 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/14 11:25:50 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,9 +53,9 @@ int		ft_print_str(va_list args, int writed, t_flags **flags)
 {
 	char	*string;
 
-	string = "ñs";
-	/*string = va_arg(args, char *);
-	if (string == NULL)
+	//string = "ñs";
+	string = va_arg(args, char *);
+	/*if (string == NULL)
 	{
 		string = "(null)";
 		if ((*flags)->has_precission == 1 && (*flags)->precission > 0)
