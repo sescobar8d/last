@@ -20,6 +20,7 @@ int             ft_r2_str(char *spaces, t_flags **flags)
 
 char    *lep_str(t_flags **flags, char *spaces, char *string)
 {
+        ft_spacer(spaces, (*flags)->space);
         if ((*flags)->plus == 1 && (*flags)->has_precission == 1
                 && (*flags)->has_width == 1 && (ft_atoi(string) >= 0))
         {
@@ -44,7 +45,6 @@ char    *ft_spaces_str(char *string, t_flags *flags)
 		spaces = ft_strjoin_free(spaces, l, 3);
 		return (spaces);
 	}
-        ft_spacer(spaces, (flags)->space);
         spaces = lep_str(&flags, spaces, string);
         if ((flags)->minus == 1)
         {
