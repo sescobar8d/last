@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:48 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/14 09:55:58 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/14 09:56:23 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ char	*ft_spaces(char *string, t_flags *flags)
 	spaces = lep(&flags, spaces, string);
 	if ((flags)->minus == 1)
 	{
-		spaces = ft_strjoin_free(string, spaces, 2);
+		spaces = ft_strjoin_free(string, spaces, 0);
 		return (spaces);
 	}
 	if ((flags)->space < 0)
@@ -62,6 +62,6 @@ char	*ft_spaces(char *string, t_flags *flags)
 		free(spaces);
 		return (string);
 	}
-	spaces = ft_strjoin_free(spaces, string, 1);
+	spaces = ft_strjoin_free(spaces, string, 0);
 	return (spaces);
 }
