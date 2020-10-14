@@ -34,11 +34,16 @@ char    *lep_str(t_flags **flags, char *spaces, char *string)
 char    *ft_spaces_str(char *string, t_flags *flags)
 {
         char    *spaces;
+	char	*l;
 
+	l = NULL;
         (flags)->space = ((flags)->width - ft_strlen(string));
         spaces = ft_calloc(1, (size_t)(flags)->width);
         if (ft_r2_str(spaces, &flags) == 1)
-                return (spaces);
+	{
+		spaces = ft_strjoin_free(spaces, l, 3);
+		return (spaces);
+	}
         ft_spacer(spaces, (flags)->space);
         spaces = lep_str(&flags, spaces, string);
         if ((flags)->minus == 1)
