@@ -64,18 +64,18 @@ char    *ft_spacerz_str(char *str, int n, t_flags *flags)
                 if ((flags)->has_precission == 1 && (flags)->has_width == 1)
                 {
                         ft_spacerc_str(result, ((n - c) - ft_strlen(str)));
-                        result = ft_strjoin_free((ft_strjoin_free("-", result, 2)), str, 3);
+                        result = ft_strjoin_free((ft_strjoin_free("-", result, 0)), str, 0);
                         return (result);
                 }
                 c = ft_yui_str(c, &flags);
         }
         if (ft_strlen(str) > (unsigned int)n)
         {
-                free(result);
+                //free(result);
                 return (str);
         }
         ft_spacerc_str(result, ((n - c) - ft_strlen(str)));
-        result = ft_strjoin_free(result, str, 3);
+        result = ft_strjoin_free(result, str, 0);
         return (result);
 }
 
