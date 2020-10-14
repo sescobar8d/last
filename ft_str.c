@@ -48,7 +48,7 @@ char    *ft_spaces_str(char *string, t_flags *flags)
         }
         if ((flags)->space < 0)
         {
-               // free(spaces);
+                free(spaces);
                 return (string);
         }
         spaces = ft_strjoin_free(spaces, string, 0);
