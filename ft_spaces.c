@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:48 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/14 11:31:11 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/14 11:54:33 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int		ft_r2(char *spaces, t_flags **flags)
 	else
 		return (0);
 }
+
 char	*lep(t_flags **flags, char *spaces, char *string)
 {
 	if ((*flags)->plus == 1 && (*flags)->has_precission == 1
