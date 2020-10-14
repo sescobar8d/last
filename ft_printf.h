@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 12:18:17 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/13 13:57:17 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/14 11:53:09 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,14 @@ int	ft_print_str(va_list args, int writed, t_flags **flags);
 const char	*ft_check_num(const char *str, t_flags *flags);
 const char	*ft_check_sym(const char *str,va_list args, t_flags *flags);
 char	*ft_spaces(char *string, t_flags *flags);
+char	*ft_spaces_str(char *string, t_flags *flags);
 void	ft_putmui_fd(unsigned int n, int fd);
 char	*ft_precision(char *string, t_flags *flags);
+char	*ft_precision_str(char *string, t_flags *flags);
 void	ft_spacer(void *str, int n);
 void	ft_spacerc(void *str, int n);
 char	*ft_spacerz(char *str, int n, t_flags *flags);
+char	*ft_spacerz_str(char *str, int n, t_flags *flags);
 int	ft_print_int(va_list args, int writed, t_flags **flags);
 int 	ft_print_unsigned_int(va_list args, int writed, t_flags **flags);
 int	ft_print_char(va_list args, int writed, t_flags **flags);
