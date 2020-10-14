@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:48 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/14 11:30:33 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/14 11:31:11 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,6 @@ char	*ft_spaces(char *string, t_flags *flags)
 		free(spaces);
 		return (string);
 	}
-	spaces = ft_strjoin_free(spaces, string, 0);
+	spaces = ft_strjoin_free(spaces, string, 3);
 	return (spaces);
 }
