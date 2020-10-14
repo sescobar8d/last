@@ -169,7 +169,7 @@ int main(void) {
 	ft_printf("%0-0s", s_hidden);
 	ft_printf("%00-s", s_hidden);
 	ft_printf("%03s", s_hidden);
-	ft_printf("%09s", s_hidden);
+	//ft_printf("%09s", s_hidden);
 	ft_printf("%-03s", s_hidden);
 	ft_printf("%-09s", s_hidden);
 	ft_printf("this %i number", 17);
