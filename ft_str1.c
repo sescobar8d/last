@@ -75,7 +75,7 @@ char    *ft_spacerz_str(char *str, int n, t_flags *flags)
                 return (str);
         }
         ft_spacerc_str(result, ((n - c) - ft_strlen(str)));
-        result = ft_strjoin_free(result, str, 0);
+        result = ft_strjoin_free(result, str, 3);
         return (result);
 }
 
