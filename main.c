@@ -655,8 +655,8 @@ int main(void) {
 	ft_printf("%d", 0);
 	ft_printf("%d", INT_MAX);
 	ft_printf("%d", INT_MIN);
-	ft_printf("%d", INT_MIN - 1);*/
-	ft_printf("%d", INT_MAX + 1);
+	ft_printf("%d", INT_MIN - 1);
+	ft_printf("%d", INT_MAX + 1);*/
 	ft_printf("%%d 0000042 == |%d|\n", 0000042);
 	ft_printf("%%d \t == |%d|\n", '\t');
 	ft_printf("%%d Lydie == |%d|\n", 'L'+'y'+'d'+'i'+'e');
