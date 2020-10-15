@@ -62,7 +62,7 @@ int main(void) {
 	ft_printf("this %s is empty", "");
 	ft_printf("this %s is %s", "hello", "");
 	ft_printf("this %s is %s", "", "hello");
-	ft_printf("%s%s%s", "1", "2", "3's a charm");
+	//ft_printf("%s%s%s", "1", "2", "3's a charm");
 	ft_printf("%32s", "abc");
 	ft_printf("%16s", "nark nark");
 	ft_printf("%5s", "goes over");
