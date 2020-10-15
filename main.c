@@ -726,8 +726,8 @@ int main(void) {
 	ft_printf("%%x 0000042 == |%x|\n", 0000042);
 	ft_printf("%%x \t == |%x|\n", '\t');
 	ft_printf("%%x Lydie == |%x|\n", 'L'+'y'+'d'+'i'+'e');
-	ft_printf("%%-5.3s LYDI == |%-5.3s|\n", "LYDI");
-	ft_printf("%%04.5i 42 == |%04.5i|\n", 42);
+*/	ft_printf("%%-5.3s LYDI == |%-5.3s|\n", "LYDI");
+/*	ft_printf("%%04.5i 42 == |%04.5i|\n", 42);
 	ft_printf("%%04.3i 42 == |%04.3i|\n", 42);
 	ft_printf("%%04.2i 42 == |%04.2i|\n", 42);
 	ft_printf("%%04i 42 == |%04i|\n", 42);
