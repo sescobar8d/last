@@ -689,7 +689,7 @@ int main(void) {
 	ft_printf("%c", 'e');
 	ft_printf("%c\n", '!');
 	ft_printf("%c\n", '\r');
-	ft_printf("%c\n", '\t');
+	ft_printf("%c\n", '\t');*/
 	ft_printf("%i", 42);
 	ft_printf("Kashim a %i histoires à raconter", 1001);
 	ft_printf("Il fait au moins %i\n", -8000);
@@ -707,7 +707,7 @@ int main(void) {
 	ft_printf("Il fait au moins %u\n", -8000);
 	ft_printf("%u", -0);
 	ft_printf("%u", 0);
-*/	ft_printf("%u", INT_MAX);
+	ft_printf("%u", INT_MAX);//Hasta aqui
 	ft_printf("%u", INT_MIN);
 	ft_printf("%u", INT_MIN - 1);
 	ft_printf("%u", INT_MAX + 1);
