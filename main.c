@@ -172,7 +172,7 @@ int main(void) {
 	ft_printf("%09s", s_hidden);
 	ft_printf("%-03s", s_hidden);
 	ft_printf("%-09s", s_hidden);
-/*	ft_printf("this %i number", 17);
+	ft_printf("this %i number", 17);
 	ft_printf("this %i number", -267);
 	ft_printf("this %i number", 0);
 	ft_printf("%i", 3);
@@ -496,7 +496,7 @@ int main(void) {
 	ft_printf("%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c",' ','!','"','#','$','%','&','\'','(',')','*','+',',','-','.','/','0','1','2','3','4','5','6','7','8','9',':',';','<','=','>','?','@','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','[','\\',']','^','_','`','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','{','|','}','~','');
 	ft_printf("%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c",(char)1,(char)2,(char)3,(char)4,(char)5,(char)6,(char)7,(char)8,(char)9,(char)10,(char)11,(char)12,(char)13,(char)14,(char)15,(char)16,(char)17,(char)18,(char)19,(char)20,(char)21,(char)22,(char)23,(char)24,(char)25,(char)26,(char)27,(char)28,(char)29,(char)30,(char)31);
 	ft_printf("%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c%-1c%-2c%-3c%-4c",(char)128,(char)129,(char)130,(char)131,(char)132,(char)133,(char)134,(char)135,(char)136,(char)137,(char)138,(char)139,(char)140,(char)141,(char)142,(char)143,(char)144,(char)145,(char)146,(char)147,(char)148,(char)149,(char)150,(char)151,(char)152,(char)153,(char)154,(char)155,(char)156,(char)157,(char)158,(char)159,(char)160,(char)161,(char)162,(char)163,(char)164,(char)165,(char)166,(char)167,(char)168,(char)169,(char)170,(char)171,(char)172,(char)173,(char)174,(char)175,(char)176,(char)177,(char)178,(char)179,(char)180,(char)181,(char)182,(char)183,(char)184,(char)185,(char)186,(char)187,(char)188,(char)189,(char)190,(char)191,(char)192,(char)193,(char)194,(char)195,(char)196,(char)197,(char)198,(char)199,(char)200,(char)201,(char)202,(char)203,(char)204,(char)205,(char)206,(char)207,(char)208,(char)209,(char)210,(char)211,(char)212,(char)213,(char)214,(char)215,(char)216,(char)217,(char)218,(char)219,(char)220,(char)221,(char)222,(char)223,(char)224,(char)225,(char)226,(char)227,(char)228,(char)229,(char)230,(char)231,(char)232,(char)233,(char)234,(char)235,(char)236,(char)237,(char)238,(char)239,(char)240,(char)241,(char)242,(char)243,(char)244,(char)245,(char)246,(char)247,(char)248,(char)249,(char)250,(char)251,(char)252,(char)253,(char)254,(char)255);
-*/	ft_printf("%c", '\0');
+	ft_printf("%c", '\0');
 	ft_printf("%5c", '\0');
 	ft_printf("%-5c", '\0');
 	ft_printf("%1$"); 
@@ -660,7 +660,7 @@ int main(void) {
 	ft_printf("%%d 0000042 == |%d|\n", 0000042);
 	ft_printf("%%d \t == |%d|\n", '\t');
 	ft_printf("%%d Lydie == |%d|\n", 'L'+'y'+'d'+'i'+'e');
-	//ft_printf("Lalalala, %d%% des gens qui parlent à Ly adorent %s. Ou Presque. %p", 100, "Ly", &r00);
+	//ft_printf("Lalalala, %d%% des gens qui parlent à Ly adorent %s. Ou Presque. %p", 100, "Ly", &r00);//AQUI PETA
 	ft_printf("%c", 42);
 	ft_printf("Kashim a %c histoires à raconter", 1001);
 	ft_printf("Il fait au moins %c\n", -8000);
@@ -727,7 +727,7 @@ int main(void) {
 	ft_printf("%%x \t == |%x|\n", '\t');
 	ft_printf("%%x Lydie == |%x|\n", 'L'+'y'+'d'+'i'+'e');
 	ft_printf("%%-5.3s LYDI == |%-5.3s|\n", "LYDI");//hasta aqui
-/*	ft_printf("%%04.5i 42 == |%04.5i|\n", 42);
+	ft_printf("%%04.5i 42 == |%04.5i|\n", 42);
 	ft_printf("%%04.3i 42 == |%04.3i|\n", 42);
 	ft_printf("%%04.2i 42 == |%04.2i|\n", 42);
 	ft_printf("%%04i 42 == |%04i|\n", 42);
@@ -740,31 +740,31 @@ int main(void) {
 	ft_printf("%%-4d 42 == |%-4d|\n", 42);
 	ft_printf("%%-5d -42 == |%-5d|\n", -42);
 	ft_printf("|%3i|%-3i|\n", 42, 42);
-	ft_printf("%%-4i 42 == |%-4i|\n", 42);*/
+	ft_printf("%%-4i 42 == |%-4i|\n", 42);
 	ft_printf("%%-*.3s LYDI == |%-*.3s|\n", 5, "LYDI");
-/*	ft_printf("%%*i 42 == |%*i|\n", 5, 42);
+	ft_printf("%%*i 42 == |%*i|\n", 5, 42);
 	ft_printf("%%*i 42 == |%*i|\n", 3, 42);
 	ft_printf("%%*i 42 == |%*i|\n", 2, 42);
-*/	ft_printf("%*s", 32, "abc");
+	ft_printf("%*s", 32, "abc");
 	ft_printf("%-*s", 32, "abc");
 	ft_printf("%*s", 3, "hello");
 	ft_printf("%.*s", 3, "hello");
 	ft_printf("%.*s", 0, "hello");
 	ft_printf("%-*.*s", 7, 3, "yolo");
-/*	ft_printf("%*i", 4, 94827);
+	ft_printf("%*i", 4, 94827);
 	ft_printf("%*i", 14, 94827);
 	ft_printf("%.*i", 6, -3);
 	ft_printf("%0*i", 7, -54);
-*/	ft_printf("%*s", -32, "abc");
+	ft_printf("%*s", -32, "abc");
 	ft_printf("%-*s", -32, "abc");
 	ft_printf("%*s", -3, "hello");
 	ft_printf("%.*s", -3, "hello");
 	ft_printf("%-*.*s", -7, -3, "yolo");
-/*	ft_printf("%*i", -4, 94827);
+	ft_printf("%*i", -4, 94827);
 	ft_printf("%*i", -14, 94827);
 	ft_printf("%.*i", -6, -3);
 	ft_printf("%0*i", -7, -54);
-*/	ft_printf("\n\n\n");
+	ft_printf("\n\n\n");
 	ft_printf("***********************\n");
 	ft_printf("******END****TEST******\n");
 	ft_printf("***********************\n");
