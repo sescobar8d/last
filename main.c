@@ -550,7 +550,7 @@ int main(void) {
 	ft_printf("%02s", NULL);
 	ft_printf("%-021s", NULL);
 	ft_printf("%-03s", NULL);
-/*	ft_printf("%05c", '\0');
+	ft_printf("%05c", '\0');
 	ft_printf("%-05c", '\0');
 	ft_printf("%  d", 42);
 	ft_printf("%--5d", 42);
@@ -567,7 +567,7 @@ int main(void) {
 	ft_printf("%lc", L'a');
 	ft_printf("%llc", L'a');
 	ft_printf("%Lc", L'a');
-	ft_printf("%-c", 'a');*/
+	ft_printf("%-c", 'a');
 	ft_printf("%#s", "hello");
 	ft_printf("%05s", "hello");
 	ft_printf("%0s", "hello");
