@@ -657,7 +657,7 @@ int main(void) {
 	ft_printf("%d", INT_MIN);
 	ft_printf("%d", INT_MIN - 1);
 	ft_printf("%d", INT_MAX + 1);
-	ft_printf("%%d 0000042 == |%d|\n", 0000042);
+//	ft_printf("%%d 0000042 == |%d|\n", 0000042);
 	ft_printf("%%d \t == |%d|\n", '\t');
 	ft_printf("%%d Lydie == |%d|\n", 'L'+'y'+'d'+'i'+'e');
 	ft_printf("Lalalala, %d%% des gens qui parlent à Ly adorent %s. Ou Presque. %p", 100, "Ly", &r00);
@@ -699,7 +699,7 @@ int main(void) {
 	ft_printf("%i", INT_MIN);
 	ft_printf("%i", INT_MIN - 1);
 	ft_printf("%i", INT_MAX + 1);
-	ft_printf("%%i 0000042 == |%i|\n", 0000042);
+//	ft_printf("%%i 0000042 == |%i|\n", 0000042);
 	ft_printf("%%i \t == |%i|\n", '\t');
 	ft_printf("%%i Lydie == |%i|\n", 'L'+'y'+'d'+'i'+'e');
 	ft_printf("%u", 42);
@@ -711,7 +711,7 @@ int main(void) {
 	ft_printf("%u", INT_MIN);
 	ft_printf("%u", INT_MIN - 1);
 	ft_printf("%u", INT_MAX + 1);
-	ft_printf("%%u 0000042 == |%u|\n", 0000042);
+//	ft_printf("%%u 0000042 == |%u|\n", 0000042);
 	ft_printf("%%u \t == |%u|\n", '\t');
 	ft_printf("%%u Lydie == |%u|\n", 'L'+'y'+'d'+'i'+'e');
 	ft_printf("%x", 42);
@@ -723,7 +723,7 @@ int main(void) {
 	ft_printf("%x", INT_MIN);
 	ft_printf("%x", INT_MIN - 1);
 	ft_printf("%x", INT_MAX + 1);
-	ft_printf("%%x 0000042 == |%x|\n", 0000042);
+//	ft_printf("%%x 0000042 == |%x|\n", 0000042);
 	ft_printf("%%x \t == |%x|\n", '\t');
 	ft_printf("%%x Lydie == |%x|\n", 'L'+'y'+'d'+'i'+'e');
 	ft_printf("%%-5.3s LYDI == |%-5.3s|\n", "LYDI");
