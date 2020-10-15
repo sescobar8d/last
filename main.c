@@ -50,9 +50,9 @@ int main(void) {
 	ft_printf("%%#08x\\n", 42);
 	ft_printf("%x\\n", 1000);
 	ft_printf("%#X\\n", 1000);
-	ft_printf("%s\\n", NULL);
-	//ft_printf("%S\\n", L"ݗݜशব");
-*/	ft_printf("%s%s\\n", "test", "test");
+*/	ft_printf("%s\\n", NULL);
+	ft_printf("%S\\n", L"ݗݜशব");
+	ft_printf("%s%s\\n", "test", "test");
 	ft_printf("%s%s%s\\n", "test", "test", "test");
 	ft_printf("%C\\n", 15000);
 	ft_printf("hello, %s.", "gavin");
