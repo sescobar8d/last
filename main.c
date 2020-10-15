@@ -26,7 +26,7 @@ int main(void) {
 	static char			   *mx_s = "Hello, World!";
 	static int					mx_i = 42;
 	static int ncm_p = 5;
-	ft_printf("%%\\n");
+	/*ft_printf("%%\\n");
 	ft_printf("%d\\n", 42);
 	ft_printf("%d%d\\n", 42, 41);
 	ft_printf("%d%d%d\\n", 42, 43, 44);
@@ -52,7 +52,7 @@ int main(void) {
 	ft_printf("%#X\\n", 1000);
 	ft_printf("%s\\n", NULL);
 	//ft_printf("%S\\n", L"ݗݜशব");
-	ft_printf("%s%s\\n", "test", "test");
+*/	ft_printf("%s%s\\n", "test", "test");
 	ft_printf("%s%s%s\\n", "test", "test", "test");
 	ft_printf("%C\\n", 15000);
 	ft_printf("hello, %s.", "gavin");
@@ -172,7 +172,7 @@ int main(void) {
 	ft_printf("%09s", s_hidden);
 	ft_printf("%-03s", s_hidden);
 	ft_printf("%-09s", s_hidden);
-	ft_printf("this %i number", 17);
+/*	ft_printf("this %i number", 17);
 	ft_printf("this %i number", -267);
 	ft_printf("this %i number", 0);
 	ft_printf("%i", 3);
@@ -763,7 +763,7 @@ int main(void) {
 	ft_printf("%*i", -4, 94827);
 	ft_printf("%*i", -14, 94827);
 	ft_printf("%.*i", -6, -3);
-	ft_printf("%0*i", -7, -54);
+	ft_printf("%0*i", -7, -54);*/
 	ft_printf("\n\n\n");
 	ft_printf("***********************\n");
 	ft_printf("******END****TEST******\n");
