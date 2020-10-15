@@ -563,11 +563,11 @@ int main(void) {
 	ft_printf("% c", 'a');
 	ft_printf("% c", -42);
 	ft_printf("%hhc", 'a');
-	ft_printf("%hc", 'a');*/
+	ft_printf("%hc", 'a');
 	ft_printf("%lc", L'a');
 	ft_printf("%llc", L'a');
 	ft_printf("%Lc", L'a');
-	ft_printf("%-c", 'a');
+	ft_printf("%-c", 'a');*/
 	ft_printf("%#s", "hello");
 	ft_printf("%05s", "hello");
 	ft_printf("%0s", "hello");
@@ -578,7 +578,7 @@ int main(void) {
 	ft_printf("%lls", L"hello");
 	ft_printf("%Ls", L"hello");
 	ft_printf("%-s", "hello");
-	ft_printf("%.4p", &ncm_p);
+/*	ft_printf("%.4p", &ncm_p);
 	ft_printf("%.p", &ncm_p);
 	ft_printf("%#p", &ncm_p);
 	ft_printf("%05p", &ncm_p);
@@ -643,12 +643,12 @@ int main(void) {
 	ft_printf("%LLf", 42.5);
 	ft_printf("%Llf", 42.5);
 	ft_printf("%lLf", 42.5);
-	ft_printf("%-f", 42.5);
+	ft_printf("%-f", 42.5);*/
 	ft_printf(" pouet %s !!", "camembert");
 	ft_printf("%s !", "Ceci n'est pas un \0 exercice !");
 	ft_printf("%s!", "Ceci n'est toujours pas un exercice !");
 	ft_printf("%s!", str);
-	ft_printf("%d", 42);
+/*	ft_printf("%d", 42);
 	ft_printf("Kashim a %d histoires à raconter", 1001);
 	ft_printf("Il fait au moins %d\n", -8000);
 	ft_printf("%d", -0);
@@ -740,31 +740,31 @@ int main(void) {
 	ft_printf("%%-4d 42 == |%-4d|\n", 42);
 	ft_printf("%%-5d -42 == |%-5d|\n", -42);
 	ft_printf("|%3i|%-3i|\n", 42, 42);
-	ft_printf("%%-4i 42 == |%-4i|\n", 42);
+	ft_printf("%%-4i 42 == |%-4i|\n", 42);*/
 	ft_printf("%%-*.3s LYDI == |%-*.3s|\n", 5, "LYDI");
-	ft_printf("%%*i 42 == |%*i|\n", 5, 42);
+/*	ft_printf("%%*i 42 == |%*i|\n", 5, 42);
 	ft_printf("%%*i 42 == |%*i|\n", 3, 42);
 	ft_printf("%%*i 42 == |%*i|\n", 2, 42);
-	ft_printf("%*s", 32, "abc");
+*/	ft_printf("%*s", 32, "abc");
 	ft_printf("%-*s", 32, "abc");
 	ft_printf("%*s", 3, "hello");
 	ft_printf("%.*s", 3, "hello");
 	ft_printf("%.*s", 0, "hello");
 	ft_printf("%-*.*s", 7, 3, "yolo");
-	ft_printf("%*i", 4, 94827);
+/*	ft_printf("%*i", 4, 94827);
 	ft_printf("%*i", 14, 94827);
 	ft_printf("%.*i", 6, -3);
 	ft_printf("%0*i", 7, -54);
-	ft_printf("%*s", -32, "abc");
+*/	ft_printf("%*s", -32, "abc");
 	ft_printf("%-*s", -32, "abc");
 	ft_printf("%*s", -3, "hello");
 	ft_printf("%.*s", -3, "hello");
 	ft_printf("%-*.*s", -7, -3, "yolo");
-	ft_printf("%*i", -4, 94827);
+/*	ft_printf("%*i", -4, 94827);
 	ft_printf("%*i", -14, 94827);
 	ft_printf("%.*i", -6, -3);
 	ft_printf("%0*i", -7, -54);
-	ft_printf("\n\n\n");
+*/	ft_printf("\n\n\n");
 	ft_printf("***********************\n");
 	ft_printf("******END****TEST******\n");
 	ft_printf("***********************\n");
