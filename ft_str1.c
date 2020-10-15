@@ -3,9 +3,7 @@
 char    *ft_precision_str(char *string, t_flags *flags)
 {
         char    *result;
-//	char	*f;
 
-//	f = NULL;
         if ((flags)->precission > ft_strlen(string))
                 return (string);
 	if ((flags)->has_precission == 1 &&
@@ -13,7 +11,6 @@ char    *ft_precision_str(char *string, t_flags *flags)
                 string = "";
         result = ft_calloc(1, (flags)->precission);
 	ft_strlcat(result,(const char *)string, (flags)->precission + 1);
-	//result = ft_strjoin_free(result, f, 3);
 	return (result);
 }
 
