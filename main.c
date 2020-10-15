@@ -563,7 +563,7 @@ int main(void) {
 	ft_printf("% c", 'a');
 	ft_printf("% c", -42);
 	ft_printf("%hhc", 'a');
-	ft_printf("%hc", 'a');
+	ft_printf("%hc", 'a');*/
 	ft_printf("%lc", L'a');
 	ft_printf("%llc", L'a');
 	ft_printf("%Lc", L'a');
@@ -763,7 +763,7 @@ int main(void) {
 	ft_printf("%*i", -4, 94827);
 	ft_printf("%*i", -14, 94827);
 	ft_printf("%.*i", -6, -3);
-	ft_printf("%0*i", -7, -54);*/
+	ft_printf("%0*i", -7, -54);
 	ft_printf("\n\n\n");
 	ft_printf("***********************\n");
 	ft_printf("******END****TEST******\n");
