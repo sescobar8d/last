@@ -658,9 +658,9 @@ int main(void) {
 	ft_printf("%d", INT_MIN - 1);
 	ft_printf("%d", INT_MAX + 1);
 	ft_printf("%%d 0000042 == |%d|\n", 0000042);
-	ft_printf("%%d \t == |%d|\n", '\t');*/
-//	ft_printf("%%d Lydie == |%d|\n", 'L'+'y'+'d'+'i'+'e');
-//	ft_printf("Lalalala, %d%% des gens qui parlent à Ly adorent %s. Ou Presque. %p", 100, "Ly", &r00);
+	ft_printf("%%d \t == |%d|\n", '\t');
+	ft_printf("%%d Lydie == |%d|\n", 'L'+'y'+'d'+'i'+'e');*/
+	ft_printf("Lalalala, %d%% des gens qui parlent à Ly adorent %s. Ou Presque. %p", 100, "Ly", &r00);
 	ft_printf("%c", 42);
 	ft_printf("Kashim a %c histoires à raconter", 1001);
 	ft_printf("Il fait au moins %c\n", -8000);
