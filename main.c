@@ -578,7 +578,7 @@ int main(void) {
 	ft_printf("%lls", L"hello");
 	ft_printf("%Ls", L"hello");
 	ft_printf("%-s", "hello");
-/*	ft_printf("%.4p", &ncm_p);
+	ft_printf("%.4p", &ncm_p);
 	ft_printf("%.p", &ncm_p);
 	ft_printf("%#p", &ncm_p);
 	ft_printf("%05p", &ncm_p);
@@ -643,7 +643,7 @@ int main(void) {
 	ft_printf("%LLf", 42.5);
 	ft_printf("%Llf", 42.5);
 	ft_printf("%lLf", 42.5);
-	ft_printf("%-f", 42.5);*/
+	ft_printf("%-f", 42.5);
 	ft_printf(" pouet %s !!", "camembert");
 	ft_printf("%s !", "Ceci n'est pas un \0 exercice !");
 	ft_printf("%s!", "Ceci n'est toujours pas un exercice !");
