@@ -11,7 +11,7 @@ char    *ft_precision_str(char *string, t_flags *flags)
                 string = "";
         if ((flags)->precission > ft_strlen(string))
                 return (string);
-        result = ft_calloc(1, (flags)->precission);
+        result = ft_calloc(1, (flags)->precission + 1);
 	ft_strlcat(result, string, (flags)->precission + 1);
 	result = ft_strjoin_free(result, f, 3);
 	return (result);
