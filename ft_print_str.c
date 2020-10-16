@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/16 10:31:20 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/16 10:31:50 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ int		ft_print_str(va_list args, int writed, t_flags **flags)
 	char	*result;
 
 	string = va_arg(args, char *);
+	result = NULL;
 	ft_strlcpy(result, (const char *)string, (size_t)(sizeof(string)));
 	/*if (string == NULL)
 	{
