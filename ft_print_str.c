@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/16 10:18:05 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/16 10:18:45 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int		ft_print_str(va_list args, int writed, t_flags **flags)
 	/*while (string != NULL)
 		string++;
 	*string = '\0';
-*/	*(flags)->hash = 0;
+*/	(*flags)->hash = 0;
 	/*if (string == NULL)
 	{
 		string = "(null)";
