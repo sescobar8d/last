@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/04 12:19:19 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/16 11:29:20 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:16:34 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,8 @@ size_t	ft_strlen(const char *str)
 	int count;
 
 	count = 0;
-	while (*str)
+	while (str[count] != '\0')
 	{
-		str++;
 		count++;
 	}
 	return (count);
