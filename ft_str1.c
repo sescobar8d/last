@@ -53,6 +53,7 @@ int             ft_yui_str(int c, t_flags **flags)
 char    *ft_spacerz_str(char *str, int n, t_flags *flags)
 {
         char    *result;
+	char	*d;
         int             c;
 
         c = 0;
@@ -64,9 +65,10 @@ char    *ft_spacerz_str(char *str, int n, t_flags *flags)
                 if ((flags)->has_precission == 1 && (flags)->has_width == 1)
                 {
                         ft_spacerc_str(result, ((n - c) - ft_strlen(str)));
-                        result = ft_strjoin((ft_strjoin("-", result)), str);
+                        d = ft_strjoin((ft_strjoin("-", result)), str);
 			free(str);
-                        return (result);
+			free(result);
+                        return (d);
                 }
                 c = ft_yui_str(c, &flags);
         }
@@ -76,8 +78,9 @@ char    *ft_spacerz_str(char *str, int n, t_flags *flags)
                 return (str);
         }
         ft_spacerc_str(result, ((n - c) - ft_strlen(str)));
-        result = ft_strjoin(result, str);
+        d = ft_strjoin(result, str);
 	free(str);
-        return (result);
+	free(result);
+        return (d);
 }
 
