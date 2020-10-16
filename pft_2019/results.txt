@@ -43,79 +43,35 @@ Test  10 (pct_5wljzp) : FAILED.
       expected (nonprintable as hex) : "%"
       actual   (nonprintable as hex) : "%    "
 
-Test  24 (s_space_padded_field_width) : FAILED.
-    First line of code: {return test("%32s", "abc");}
+Test  16 (s_basic_string_expansion) : FAILED.
+    First line of code: {return test("hello, %s.", "gavin");}
     SEGFAULT
 
-Test  25 (s_space_padded_field_width2) : FAILED.
-    First line of code: {return test("%16s", "nark nark");}
-    SEGFAULT
+Test  17 (s_only_string_expansion) : FAILED.
+    First line of code: {return test("%s", "testing testing");}
+    SIGABRT
 
-Test  26 (s_space_padded_over_field_width) : FAILED.
-    First line of code: {return test("%5s", "goes over");}
+Test  18 (s_two_string_expansions) : FAILED.
+    First line of code: {return test("%s%s", "hello", "world");}
     Timed out
 
-Test  27 (s_space_padded_field_width_lj) : FAILED.
-    First line of code: {return test("%-32s", "abc");}
+Test  19 (s_two_string_expansions2) : FAILED.
+    First line of code: {return test("..%s stuff %s", "a", "b");}
     Timed out
 
-Test  28 (s_space_padded_field_width2_lj) : FAILED.
-    First line of code: {return test("%-16s", "nark nark");}
+Test  20 (s_empty_string_expansion) : FAILED.
+    First line of code: {return test("this %s is empty", "");}
     Timed out
 
-Test  29 (s_space_padded_over_field_width_lj) : FAILED.
-    First line of code: {return test("%-5s", "goes over");}
+Test  21 (s_full_then_empty_string) : FAILED.
+    First line of code: {return test("this %s is %s", "hello", "");}
     Timed out
 
-Test  30 (s_string_prec_notrunc) : FAILED.
-    First line of code: {return test("%.7s", "hello");}
+Test  22 (s_empty_then_full_string) : FAILED.
+    First line of code: {return test("this %s is %s", "", "hello");}
     Timed out
 
-Test  31 (s_string_prec_trunc) : FAILED.
-    First line of code: {return test("%.3s", "hello");}
-    Timed out
-
-Test  32 (s_string_prec_default) : FAILED.
-    First line of code: {return test("%.s", "hello");}
-    Timed out
-
-Test  33 (s_string_prec_zero) : FAILED.
-    First line of code: {return test("%.0s", "hello");}
-    Timed out
-
-Test  34 (s_two_strings_prec_2trunc) : FAILED.
-    First line of code: {return test("%.3s%.2s", "holla", "bitch");}
-    Timed out
-
-Test  35 (s_two_strings_prec_1trunc_a) : FAILED.
-    First line of code: {return test("%.2s%.7s", "hello", "world");}
-    Timed out
-
-Test  36 (s_two_strings_prec_1trunc_b) : FAILED.
-    First line of code: {return test("%.7s%.2s", "hello", "world");}
-    Timed out
-
-Test  37 (s_two_strings_prec_0trunc) : FAILED.
-    First line of code: {return test("%.5s%7s", "yo", "boi");}
-    Timed out
-
-Test  38 (s_string_prec_width_notrunc) : FAILED.
-    First line of code: {return test("%7.5s", "yolo");}
-    Timed out
-
-Test  39 (s_string_prec_width_trunc) : FAILED.
-    First line of code: {return test("%7.5s", "bombastic");}
-    Timed out
-
-Test  40 (s_string_prec_width_notrunc_lj) : FAILED.
-    First line of code: {return test("%-7.5s", "yolo");}
-    Timed out
-
-Test  41 (s_string_prec_width_trunc_lj) : FAILED.
-    First line of code: {return test("%-7.5s", "tubular");}
-    Timed out
-
-Test  42 (s_two_s_prec_width_2fit_0trunc) : FAILED.
-    First line of code: {return test("%7.7s%7.7s", "hello", "world");}
+Test  23 (s_three_strings) : FAILED.
+    First line of code: {return test("%s%s%s", "1", "2", "3's a charm");}
     Timed out
 
