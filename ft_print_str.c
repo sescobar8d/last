@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/16 11:12:20 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/16 11:12:44 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,10 @@ char	*ld(char *string, t_flags *flags)
 int		ft_print_str(va_list args, int writed, t_flags **flags)
 {
 	char	*string;
-	char	*t;
+	//char	*t;
 
 	string = va_arg(args, char *);
-	t = ft_str_dup((const char *)string);
+	//t = ft_str_dup((const char *)string);
 	/*if (string == NULL)
 	{
 		string = "(null)";
