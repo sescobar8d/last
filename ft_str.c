@@ -20,10 +20,6 @@ int             ft_r2_str(char *spaces, t_flags **flags)
 
 char    *lep_str(t_flags **flags, char *spaces, char *string)
 {
-	char	*j;
-
-	j = NULL;
-        ft_spacer(spaces, (*flags)->space);
         if ((*flags)->plus == 1 && (*flags)->has_precission == 1
                 && (*flags)->has_width == 1 && (ft_atoi(string) >= 0))
         {
@@ -32,23 +28,18 @@ char    *lep_str(t_flags **flags, char *spaces, char *string)
                 else
                         ft_r1_str(spaces);
         }
-	spaces = ft_strjoin_free(spaces, j, 3);
         return (spaces);
 }
 
 char    *ft_spaces_str(char *string, t_flags *flags)
 {
         char    *spaces;
-	char	*l;
 
-	l = NULL;
         (flags)->space = ((flags)->width - ft_strlen(string));
         spaces = ft_calloc(1, (size_t)(flags)->width);
         if (ft_r2_str(spaces, &flags) == 1)
-	{
-		spaces = ft_strjoin_free(spaces, l, 3);
 		return (spaces);
-	}
+        ft_spacer(spaces, (*flags)->space);
         spaces = lep_str(&flags, spaces, string);
         if ((flags)->minus == 1)
         {

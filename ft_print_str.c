@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/16 12:24:36 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/16 12:25:21 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,13 @@ void	ft_delete(t_flags *flags)
 char	*ld2(char *string, t_flags **flags)
 {
 	if ((*flags)->has_width == 1 && (*flags)->zero == 0)
-		string = ft_spaces((char *)string, *flags);
+		string = ft_spaces_str((char *)string, *flags);
 	else if ((*flags)->has_precission == 1)
-		string = ft_precision((char *)string, *flags);
+		string = ft_precision_str((char *)string, *flags);
 	else if ((*flags)->zero == 1 && (*flags)->minus == 0)
-		string = ft_spacerz(string, (*flags)->width, *flags);
+		string = ft_spacerz_str(string, (*flags)->width, *flags);
 	else if ((*flags)->zero == 1 && (*flags)->minus == 1)
-		string = ft_spaces(string, *flags);
+		string = ft_spaces_str(string, *flags);
 	return (string);
 }
 
@@ -58,13 +58,13 @@ int		ft_print_str(va_list args, int writed, t_flags **flags)
 	{
 		string = "(null)";
 		if ((*flags)->has_precission == 1 && (*flags)->precission > 0)
-			string = ft_precision((char *)string, *flags);
-		string = ft_spaces(string, *flags);
+			string = ft_precision_str((char *)string, *flags);
+		string = ft_spaces_str(string, *flags);
 	}
 	else if ((*flags)->has_width == 1 && (*flags)->has_precission == 1)
 	{
-		string = ft_precision((char *)string, *flags);
-		string = ft_spaces((char *)string, *flags);
+		string = ft_precision_str((char *)string, *flags);
+		string = ft_spaces_str((char *)string, *flags);
 		ft_delete(*flags);
 	}
 	string = ld(string, *flags);
