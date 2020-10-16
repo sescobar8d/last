@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:49:34 by sescobar          #+#    #+#             */
-/*   Updated: 2020/09/01 12:28:43 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/16 11:07:21 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,4 +95,15 @@ char	*ft_ul_to_hex(unsigned long n)
 	hex[count] = '\0';
 	ft_str_inv(hex);
 	return (hex);
+}
+
+char	*ft_str_dup(const char *s1)
+{
+	char	*result;
+	if (!(result = malloc(ft_strlen(s1) + 1)))
+		return (0);
+	if (*result == '\0')
+		return (0);
+	ft_strcpy(result, s1);
+	return (result);
 }

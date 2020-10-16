@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 12:18:17 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/14 11:53:09 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/16 11:07:53 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ int	ft_minus(char c, char *str, int writed, t_flags *flags);
 char	*ft_ul_to_hex(unsigned long n);
 char	*ft_ui_to_hex(unsigned int n);
 char	*ft_str_up(char *str);
+char	*ft_str_dup(const char *s1);
 char	*ft_strjoin_free(char *str1, char *str2, int i);
 
 #endif
