@@ -55,7 +55,7 @@ int main(void) {
 //	ft_printf("%s%s\\n", "test", "test");
 //	ft_printf("%s%s%s\\n", "test", "test", "test");
 //	ft_printf("%C\\n", 15000);
-	ft_printf("hello, %s.", "gavin");
+/*	ft_printf("hello, %s.", "gavin");
 	ft_printf("%s", "testing testing");
 	ft_printf("%s%s", "hello", "world");
 	ft_printf("..%s stuff %s", "a", "b");
@@ -65,20 +65,20 @@ int main(void) {
 	ft_printf("%s%s%s", "1", "2", "3's a charm");
 	ft_printf("%32s", "abc");
 	ft_printf("%16s", "nark nark");
-	ft_printf("%5s", "goes over");
+	ft_printf("%5s", "goes over");*/
 	ft_printf("%-32s", "abc");
 	ft_printf("%-16s", "nark nark");
-	ft_printf("%-5s", "goes over");
+	//ft_printf("%-5s", "goes over");
 	ft_printf("%.7s", "hello");
 	ft_printf("%.3s", "hello");
 	ft_printf("%.s", "hello");
-	ft_printf("%.0s", "hello");
+	/*ft_printf("%.0s", "hello");
 	ft_printf("%.3s%.2s", "holla", "bitch");
 	ft_printf("%.2s%.7s", "hello", "world");
 	ft_printf("%.7s%.2s", "hello", "world");
 	ft_printf("%.5s%7s", "yo", "boi");
 	ft_printf("%7.5s", "yolo");
-	ft_printf("%7.5s", "bombastic");
+	ft_printf("%7.5s", "bombastic");*/
 	ft_printf("%-7.5s", "yolo");
 	ft_printf("%-7.5s", "tubular");
 	ft_printf("%7.7s%7.7s", "hello", "world");
