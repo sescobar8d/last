@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/16 10:22:40 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/16 10:31:20 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,10 @@ char	*ld(char *string, t_flags *flags)
 int		ft_print_str(va_list args, int writed, t_flags **flags)
 {
 	char	*string;
-	char	*t;
+	char	*result;
 
-	t = "";
-	t = ft_strjoin((string = va_arg(args, char *)), t);
+	string = va_arg(args, char *);
+	ft_strlcpy(result, (const char *)string, (size_t)(sizeof(string)));
 	/*if (string == NULL)
 	{
 		string = "(null)";
@@ -71,8 +71,7 @@ int		ft_print_str(va_list args, int writed, t_flags **flags)
 	}
 	string = ld(string, *flags);
 	ft_putstr_fd(string, 1);
-	*/writed += ft_strlen(t);
-	ft_putstr_fd(t, 1);
-	(*flags)->hash = 0;
+	*/writed += ft_strlen(result);
+	ft_putstr_fd(result, 1);
 	return (writed);
 }
