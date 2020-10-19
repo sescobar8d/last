@@ -41,6 +41,7 @@ char    *ft_spaces_str(char *string, t_flags *flags)
 	if (ft_r2_str(spaces, &flags) == 1)
 	{
 		free(spaces);
+		free(string);
 		return (spaces);
 	}
         ft_spacer(spaces, (flags)->space);
