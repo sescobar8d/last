@@ -60,8 +60,8 @@ char    *ft_spaces_str(char *string, t_flags *flags)
         	        return (string);
         	}
         	res = ft_strjoin(spaces, string);
-		free(string);
-		free(spaces);
 	}
+	free(string);
+	free(spaces);
         return (res);
 }
