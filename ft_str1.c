@@ -70,21 +70,14 @@ char    *ft_spacerz_str(char *str, int n, t_flags *flags)
                 {
                         ft_spacerc_str(result, ((n - c) - ft_strlen(str)));
                         d = ft_strjoin((ft_strjoin("-", result)), str);
-			free(str);
-			free(result);
                         return (d);
                 }
                 c = ft_yui_str(c, &flags);
         }
         if (ft_strlen(str) > (unsigned int)n)
-        {
-                free(result);
                 return (str);
-        }
         ft_spacerc_str(result, ((n - c) - ft_strlen(str)));
         d = ft_strjoin(result, str);
-	free(str);
-	free(result);
         return (d);
 }
 
