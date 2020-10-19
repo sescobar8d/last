@@ -44,7 +44,7 @@ char    *ft_spaces_str(char *string, t_flags *flags)
         spaces = lep_str(&flags, spaces, string);
         if ((flags)->minus == 1)
         {
-                res = ft_strjoin_free(string, spaces, 3);
+                res = ft_strjoin_free(string, spaces, 1);
                 return (res);
         }
         if ((flags)->space < 0)
