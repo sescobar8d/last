@@ -40,7 +40,7 @@ char    *ft_spaces_str(char *string, t_flags *flags)
         spaces = ft_calloc(1, (size_t)(flags)->width);
 	if (ft_r2_str(spaces, &flags) == 1)
 	{
-		free(string);
+		free(spaces);
 		return (spaces);
 	}
         ft_spacer(spaces, (flags)->space);
