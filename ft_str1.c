@@ -6,7 +6,10 @@ char    *ft_precision_str(char *string, t_flags *flags)
 
         result = ft_calloc(1, (flags)->precission);
         if ((flags)->precission > ft_strlen(string))
-                return (string);
+	{
+		free(result);
+		return (string);
+	}
 	if ((flags)->has_precission == 1 &&
                 (flags)->precission == 0)
                 string = "";
