@@ -5,7 +5,10 @@ char    *ft_precision_str(char *string, t_flags *flags)
         char    *result;
 
         if ((flags)->precission > ft_strlen(string))
-                return (string);
+	{
+		free(result);
+		return (string);
+	}
 	if ((flags)->has_precission == 1 &&
                 (flags)->precission == 0)
                 string = "";
