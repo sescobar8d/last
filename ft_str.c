@@ -45,7 +45,7 @@ char    *ft_spaces_str(char *string, t_flags *flags)
         if ((flags)->minus == 1)
         {
                 res = ft_strjoin(string, spaces);
-		//free(string);
+	//	free(string);
 		free(spaces);
                 return (res);
         }
