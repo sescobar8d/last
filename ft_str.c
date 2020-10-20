@@ -30,7 +30,7 @@ char    *lep_str(t_flags **flags, char *spaces, char *string)
         }
         return (spaces);
 }
-
+/*
 char    *ft_spaces_str(char *string, t_flags *flags)
 {
         char    *spaces;
@@ -56,4 +56,4 @@ char    *ft_spaces_str(char *string, t_flags *flags)
         }
         res = ft_strjoin_free(spaces, string, 1);
         return (res);
-}
+}*/
