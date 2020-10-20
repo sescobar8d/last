@@ -17,7 +17,7 @@ char    *ft_precision_str(char *string, t_flags *flags)
 	return (result);
 }*/
 
-void	ft_precission_str(char *string, t_flags *flags)
+void	ft_precision_str(char *string, t_flags *flags)
 {
 	char	*result;
 
