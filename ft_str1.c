@@ -65,7 +65,7 @@ char    *ft_spacerz_str(char *str, int n, t_flags *flags)
                 if ((flags)->has_precission == 1 && (flags)->has_width == 1)
                 {
                         ft_spacerc_str(result, ((n - c) - ft_strlen(str)));
-                        d = ft_strjoin((ft_strjoin("-", result)), str);
+                        d = ft_strjoin((ft_strjoin_free("-", result, 2)), str);
                         return (d);
                 }
                 c = ft_yui_str(c, &flags);
