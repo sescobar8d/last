@@ -33,9 +33,9 @@ char    *lep_str(t_flags **flags, char *spaces, char *string)
 
 char    *ft_spaces_str(char *string, t_flags *flags)
 {
-  //      char    *spaces;
+        char    *spaces;
 	char	*res;
-/*
+
         (flags)->space = ((flags)->width - ft_strlen(string));
         spaces = ft_calloc(1, (size_t)(flags)->width);
 	if (ft_r2_str(spaces, &flags) == 1)
@@ -55,5 +55,5 @@ char    *ft_spaces_str(char *string, t_flags *flags)
                 return (string);
         }
         res = ft_strjoin_free(spaces, string, 1);
-       */ return (res);
+        return (res);
 }
