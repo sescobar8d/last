@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 12:18:17 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/20 12:52:11 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/20 13:02:25 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_spaces(char *string, t_flags *flags);
 char	*ft_spaces_str(char *string, t_flags *flags);
 void	ft_putmui_fd(unsigned int n, int fd);
 char	*ft_precision(char *string, t_flags *flags);
-void	ft_precision_str(char *string, t_flags *flags);
+char	*ft_precision_str(char *string, t_flags *flags);
 void	ft_spacer(void *str, int n);
 void	ft_spacerc(void *str, int n);
 char	*ft_spacerz(char *str, int n, t_flags *flags);
