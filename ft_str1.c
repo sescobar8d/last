@@ -1,5 +1,5 @@
 #include "ft_printf.h"
-
+/*
 char    *ft_precision_str(char *string, t_flags *flags)
 {
         char    *result;
@@ -15,6 +15,24 @@ char    *ft_precision_str(char *string, t_flags *flags)
                 string = "";
 	ft_strlcat(result,(const char *)string, (flags)->precission + 1);
 	return (result);
+}*/
+
+void	ft_precission_str(char *string, t_flags *flags)
+{
+	char	*result;
+
+	result = ft_calloc(1, (flags)->precission);
+        if ((flags)->precission > ft_strlen(string))
+	{
+		free(result);
+		return ();
+	}
+	if ((flags)->has_precission == 1 &&
+                (flags)->precission == 0)
+                string = "";
+	ft_strlcat(result,(const char *)string, (flags)->precission + 1);
+	string = ft_strcpy(string, result);
+	free(result);
 }
 
 void    ft_spacerc_str(void *str, int n)
