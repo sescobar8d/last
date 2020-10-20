@@ -14,7 +14,6 @@ char    *ft_precision_str(char *string, t_flags *flags)
                 (flags)->precission == 0)
                 string = "";
 	ft_strlcat(result,(const char *)string, (flags)->precission + 1);
-	free(string);
 	return (result);
 }
 
@@ -75,7 +74,10 @@ char    *ft_spacerz_str(char *str, int n, t_flags *flags)
                 c = ft_yui_str(c, &flags);
         }
         if (ft_strlen(str) > (unsigned int)n)
-                return (str);
+	{
+		free(result);
+		return (str);
+	}
         ft_spacerc_str(result, ((n - c) - ft_strlen(str)));
         d = ft_strjoin_free(result, str, 1);
         return (d);
