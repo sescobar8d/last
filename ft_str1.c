@@ -25,7 +25,7 @@ void	ft_precission_str(char *string, t_flags *flags)
         if ((flags)->precission > ft_strlen(string))
 	{
 		free(result);
-		return ();
+		return;
 	}
 	if ((flags)->has_precission == 1 &&
                 (flags)->precission == 0)
