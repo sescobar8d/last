@@ -6,24 +6,12 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/20 10:55:46 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/20 10:57:10 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-/*
-int		long_condition(t_flags *flags)
-{
-	if (((flags)->width > 0 && (flags)->precission > 0 &&
-		(flags)->precission < ft_strlen("null"))
-		|| ((flags)->has_width == 0 &&
-		(flags)->has_precission == 1 &&
-		(flags)->precission < ft_strlen("null")))
-		return (1);
-	else
-		return (0);
-}
-*/
+
 void	ft_delete(t_flags *flags)
 {
 	flags->has_width = 0;
@@ -70,7 +58,6 @@ int		ft_print_str(va_list args, int writed, t_flags **flags)
 	string = ld(string, *flags);
 	ft_putstr_fd(string, 1);
 	writed += ft_strlen(string);
-	//if (ft_strlen(string) == 0)
-	//	free(string);
+//	free(string);
 	return (writed);
 }
