@@ -6,7 +6,7 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/20 12:53:03 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/20 13:02:59 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ld2(char *string, t_flags **flags)
 	if ((*flags)->has_width == 1 && (*flags)->zero == 0)
 		string = ft_spaces_str((char *)string, *flags);
 	else if ((*flags)->has_precission == 1)
-		ft_precision_str((char *)string, *flags);
+		string = ft_precision_str((char *)string, *flags);
 	else if ((*flags)->zero == 1 && (*flags)->minus == 0)
 		string = ft_spacerz_str(string, (*flags)->width, *flags);
 	else if ((*flags)->zero == 1 && (*flags)->minus == 1)
@@ -46,12 +46,12 @@ int		ft_print_str(va_list args, int writed, t_flags **flags)
 	{
 		string = "(null)";
 		if ((*flags)->has_precission == 1 && (*flags)->precission > 0)
-			ft_precision_str((char *)string, *flags);
+			string = ft_precision_str((char *)string, *flags);
 		string = ft_spaces_str(string, *flags);
 	}
 	else if ((*flags)->has_width == 1 && (*flags)->has_precission == 1)
 	{
-		ft_precision_str((char *)string, *flags);
+		string = ft_precision_str((char *)string, *flags);
 		string = ft_spaces_str((char *)string, *flags);
 		ft_delete(*flags);
 	}
