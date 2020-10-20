@@ -6,12 +6,12 @@
 /*   By: sescobar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/17 15:51:16 by sescobar          #+#    #+#             */
-/*   Updated: 2020/10/20 10:55:15 by sescobar         ###   ########.fr       */
+/*   Updated: 2020/10/20 10:55:46 by sescobar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-
+/*
 int		long_condition(t_flags *flags)
 {
 	if (((flags)->width > 0 && (flags)->precission > 0 &&
@@ -23,7 +23,7 @@ int		long_condition(t_flags *flags)
 	else
 		return (0);
 }
-
+*/
 void	ft_delete(t_flags *flags)
 {
 	flags->has_width = 0;
