@@ -14,6 +14,7 @@ char    *ft_precision_str(char *string, t_flags *flags)
                 (flags)->precission == 0)
                 string = "";
 	ft_strlcat(result,(const char *)string, (flags)->precission + 1);
+	free(string);
 	return (result);
 }
 
