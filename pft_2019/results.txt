@@ -43,35 +43,84 @@ Test  10 (pct_5wljzp) : FAILED.
       expected (nonprintable as hex) : "%"
       actual   (nonprintable as hex) : "%    "
 
-Test  16 (s_basic_string_expansion) : FAILED.
-    First line of code: {return test("hello, %s.", "gavin");}
-    SEGFAULT
+Test 426 (p_null) : FAILED.
+    First line of code: {return test("%p", NULL);}
+      expected return value : 5
+      your return value     : 3
+      expected output : "(nil)"
+      your output     : "0x0"
+      expected (nonprintable as hex) : "(nil)"
+      actual   (nonprintable as hex) : "0x0"
 
-Test  17 (s_only_string_expansion) : FAILED.
-    First line of code: {return test("%s", "testing testing");}
-    SIGABRT
+Test 427 (p_null_width_fit) : FAILED.
+    First line of code: {return test("%5p", NULL);}
+      expected return value : 5
+      your return value     : 5
+      expected output : "(nil)"
+      your output     : "  0x0"
+      expected (nonprintable as hex) : "(nil)"
+      actual   (nonprintable as hex) : "  0x0"
 
-Test  18 (s_two_string_expansions) : FAILED.
-    First line of code: {return test("%s%s", "hello", "world");}
-    Timed out
+Test 428 (p_null_width_nofit) : FAILED.
+    First line of code: {return test("%2p", NULL);}
+      expected return value : 5
+      your return value     : 3
+      expected output : "(nil)"
+      your output     : "0x0"
+      expected (nonprintable as hex) : "(nil)"
+      actual   (nonprintable as hex) : "0x0"
 
-Test  19 (s_two_string_expansions2) : FAILED.
-    First line of code: {return test("..%s stuff %s", "a", "b");}
-    Timed out
+Test 429 (p_void) : FAILED.
+    First line of code: {return test("%.p", NULL);}
+      expected return value : 5
+      your return value     : 2
+      expected output : "(nil)"
+      your output     : "0x"
+      expected (nonprintable as hex) : "(nil)"
+      actual   (nonprintable as hex) : "0x"
 
-Test  20 (s_empty_string_expansion) : FAILED.
-    First line of code: {return test("this %s is empty", "");}
-    Timed out
+Test 430 (p_void_width_fit) : FAILED.
+    First line of code: {return test("%5.p", NULL);}
+      expected return value : 5
+      your return value     : 5
+      expected output : "(nil)"
+      your output     : "   0x"
+      expected (nonprintable as hex) : "(nil)"
+      actual   (nonprintable as hex) : "   0x"
 
-Test  21 (s_full_then_empty_string) : FAILED.
-    First line of code: {return test("this %s is %s", "hello", "");}
-    Timed out
+Test 431 (p_void_width_nofit) : FAILED.
+    First line of code: {return test("%2.p", NULL);}
+      expected return value : 5
+      your return value     : 2
+      expected output : "(nil)"
+      your output     : "0x"
+      expected (nonprintable as hex) : "(nil)"
+      actual   (nonprintable as hex) : "0x"
 
-Test  22 (s_empty_then_full_string) : FAILED.
-    First line of code: {return test("this %s is %s", "", "hello");}
-    Timed out
+Test 434 (p_ftfc_zero_prec5_undefbehav) : FAILED.
+    First line of code: {return test("%.5p", 0);}
+      expected return value : 5
+      your return value     : 7
+      expected output : "(nil)"
+      your output     : "0x000x0"
+      expected (nonprintable as hex) : "(nil)"
+      actual   (nonprintable as hex) : "0x000x0"
 
-Test  23 (s_three_strings) : FAILED.
-    First line of code: {return test("%s%s%s", "1", "2", "3's a charm");}
-    Timed out
+Test 435 (p_ftfc_zero_prec0_undefbehav) : FAILED.
+    First line of code: {return test("%.0p", 0);}
+      expected return value : 5
+      your return value     : 2
+      expected output : "(nil)"
+      your output     : "0x"
+      expected (nonprintable as hex) : "(nil)"
+      actual   (nonprintable as hex) : "0x"
+
+Test 436 (p_ftfc_5w_throwswarning) : FAILED.
+    First line of code: {return test("%5p", 0);}
+      expected return value : 5
+      your return value     : 5
+      expected output : "(nil)"
+      your output     : "  0x0"
+      expected (nonprintable as hex) : "(nil)"
+      actual   (nonprintable as hex) : "  0x0"
 
